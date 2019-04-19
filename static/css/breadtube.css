@@ -790,24 +790,39 @@ button, select, input, textarea { font-family: inherit; }
   display: none;
 }
 
-.tags {
-  margin-top: 5px;
+.text-content h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
-.tag {
-  background: #aaa;
-  border-radius: 3px 3px 3px 3px;
-  color: #000;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 15px;
-  padding: 8px;
+.text-content p {
+  max-width: 35rem;
+  margin-bottom: 0.5rem;
+}
+
+.iframe-list {
+  overflow: hidden;
+}
+
+.iframe-list li {
+  float: left;
+  width: 600px;
+  margin-right: 10px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
   position: relative;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
 }
 
-.tag:hover {
-  background-color: #880e7d;
-  color: white;
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
