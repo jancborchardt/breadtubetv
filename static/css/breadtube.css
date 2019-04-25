@@ -335,7 +335,7 @@ button, select, input, textarea { font-family: inherit; }
 .content .heading-image {
   max-width: 70px;
   float: left;
-  margin: 1rem 10px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .heading-meta li {
@@ -637,6 +637,15 @@ button, select, input, textarea { font-family: inherit; }
   }
 }
 
+.content .video-metadata {
+  margin-left: 0;
+}
+
+.video-metadata .heading {
+  font-size: 1.3em;
+  margin-top: 0rem;
+}
+
 .video-metadata .video-channel-image {
   width: 25px;
   margin: 4px;
@@ -804,12 +813,24 @@ button, select, input, textarea { font-family: inherit; }
 
 .iframe-list {
   overflow: hidden;
+  display: flex;
+  margin-top: 1rem;
+  flex-flow: row wrap;
 }
 
 .iframe-list li {
-  float: left;
-  width: 600px;
-  margin-right: 10px;
+  width: 100%;
+  margin: 1rem 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .iframe-list li {
+    max-width: 500px;
+  }
+}
+
+.iframe-list li h3 {
+  font-weight: bold;
 }
 
 .iframe-container {
