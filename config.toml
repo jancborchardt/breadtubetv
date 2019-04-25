@@ -19,13 +19,13 @@ url = "/"
 weight = 1
 
 [[ menu.main ]]
-name = "Videos"
-url = "/videos/"
+name = "Channels"
+url = "/channels/"
 weight = 2
 
 [[ menu.main ]]
-name = "Channels"
-url = "/channels/"
+name = "Videos"
+url = "/videos/"
 weight = 3
 
 [[ menu.main ]]
