@@ -768,7 +768,14 @@ button, select, input, textarea { font-family: inherit; }
 }
 
 .text-content h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.text-content h3 {
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
@@ -777,4 +784,14 @@ button, select, input, textarea { font-family: inherit; }
 .text-content p {
   max-width: 35rem;
   margin-bottom: 0.5rem;
+}
+
+.text-content ul {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-content ul li {
+  list-style: disc;
+  margin-top: 0.3rem;
 }
