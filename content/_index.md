@@ -1,5 +1,5 @@
 ---
-title: BreadTube.tv
+title: Featured
 type: "channel"
 tags:
 - featured

@@ -1,6 +1,6 @@
 baseURL = "https://breadtube.tv/"
 languageCode = "en-us"
-title = "BreadTube"
+title = "BreadTube.tv"
 
 [ params ]
 description = "Quality content going against the prevailing winds of the internet."

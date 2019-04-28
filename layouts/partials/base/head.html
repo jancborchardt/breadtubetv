@@ -1,11 +1,6 @@
 <meta charset="utf-8">
-{{ if .IsHome }}
-  <title>{{ title .Site.Title }}</title>
-  <meta property="og:title" content='{{ .Site.Title }}'>
-{{ else }}
-  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-  <meta property="og:title" content='{{ .Title }} &middot; {{ .Site.Title }}'>
-{{ end }}
+<title>{{ .Page.Title }} &middot; {{ .Site.Title }}</title>
+<meta property="og:title" content='{{ .Title }} &middot; {{ .Site.Title }}'>
 
 <meta property="description" content="{{ .Site.Params.description }}">
 
