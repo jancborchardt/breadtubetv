@@ -9,6 +9,32 @@ BreadTube.tv seaks to bring together Creators, Subscribers, Moderators, Develope
 
 The Website is a resource for discovering and sharing BreadTube content, it also serves as a push for us to developer better tooling and more automation of the concept for other communities, creators, and moderators.
 
+## Workflows
+
+### Suggesting a Channel
+
+{{<mermaid align="left">}}
+  graph TB;
+    A[Channel Form] -->|User Submits| B[Discord Notice]
+      B -->|Developer Reads| BAKE[Bake Import]
+      BAKE -->|Pull Request| GH[Github]
+      GH --> C{On r/BreadTube?}
+      C -->|Yes| D[Needs Review]
+      C -->|No| E[Discussion]
+      D -->|Reviewed| F(Ready to Merge)
+      F -->|Merged| G(Live on BreadTube.tv)
+      E -->|Discussed| H{Mergeable?}
+      H --> D
+    click A "/channels/new"
+    click B "/discord"
+    click BAKE "https://github.com/breadtubetv/bake"
+    click GH "https://github.com/breadtubetv/breadtubetv"
+    click C "https://www.reddit.com/r/BreadTube/search?q=contrapoints&restrict_sr=1"
+    click D "https://github.com/breadtubetv/breadtubetv/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aopen+label%3A%22needs+review%22+"
+    click E "https://github.com/breadtubetv/breadtubetv/pulls?q=is%3Apr+is%3Aopen+label%3ADiscussion"
+    click G "https://breadtube.tv/channels"
+{{< /mermaid >}}
+
 ## Features
 
 - ### HomePage
